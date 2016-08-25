@@ -18,39 +18,4 @@ $(function () {
       $('.count', wrapper).html(count);
     }
   }
-
-
-  window.initRedactor = function(el) {
-    el.redactor({
-      focus: true,
-      formatting: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p'],
-      formattingAdd: {
-        "heading-red": {
-          title: 'Nadpis červený',
-          args: ['h3', 'class', 'heading-red']
-        },
-        "heading-yellow": {
-          title: 'Nadpis žlutý',
-          args: ['h3', 'class', 'heading-yellow']
-        },
-        "heading-green": {
-          title: 'Nadpis zelený',
-          args: ['h3', 'class', 'heading-green']
-        }
-      },
-      callbacks: {
-        init: function(e) {
-          printCount( this.$element, this.clean.stripTags(this.code.get()) );
-        },
-        keyup: function(e) {
-          printCount( this.$element, this.clean.stripTags(this.code.get()) );
-        }
-      }
-    });
-  }
-
-  $('.redactor').each(function(){
-    initRedactor( $(this) );
-  });
-
 });
