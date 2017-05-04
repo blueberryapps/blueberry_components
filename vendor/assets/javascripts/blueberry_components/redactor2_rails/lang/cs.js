@@ -14,7 +14,7 @@
     "deleted-abbr": "S",
     "underline-abbr": "U",
     "lists": "Seznamy",
-    "link-insert": "Vlořit odkaz",
+    "link-insert": "Vložit odkaz",
     "link-edit": "Opravit odkaz",
     "link-in-new-tab": "Otevřít odkaz v nové záložce",
     "unlink": "Zrušit odkaz",
